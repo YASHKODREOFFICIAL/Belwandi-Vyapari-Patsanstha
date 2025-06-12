@@ -4,6 +4,9 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import IntroScreen from './components/IntroScreen';
 import Pragati from './pages/Pragati';
+import SansthechiKamgiri from './pages/SansthechiKamgiri';
+import Gallery from './pages/Gallery';
+
 
 import MukhyaPaan from './pages/MukhyaPaan';
 import Yojana from './pages/Yojana';
@@ -27,6 +30,10 @@ const App = () => {
         return <AmchyaBaddal />;
       case 'pragati':
         return <Pragati />;
+      case 'kamgiri':
+        return <SansthechiKamgiri />;
+      case 'gallery':
+        return <Gallery />;
       default:
         return <MukhyaPaan />;
     }

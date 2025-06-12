@@ -4,7 +4,7 @@ const Pragati = () => {
   return (
     <div className="bg-white px-4 py-8 min-h-screen flex flex-col items-center">
         <br /><br />
-      <h1 className="text-3xl md:text-4xl font-bold text-purple-800 mb-10 text-center">
+      <h1 className="text-3xl font-bold mb-6 text-center text-purple-800">
         संस्थेने केलेली ५ वर्षातील प्रगती व्यवसाय वृध्दीचा तक्ता - आज अखेर
       </h1>
 

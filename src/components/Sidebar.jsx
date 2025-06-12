@@ -2,7 +2,9 @@ import React from 'react';
 import dashboardIcon from '../assets/home.png';
 import settingsIcon from '../assets/schemes.png';
 import aboutIcon from '../assets/aboutus.png';
-import progressIcon from '../assets/progress.png'; // Add a relevant icon for "प्रगती"
+import progressIcon from '../assets/progress.png';
+import achievementIcon from '../assets/achievements.png'; // Add this to your assets
+import galleryIcon from '../assets/gallery.png';         // Add this to your assets
 
 const Sidebar = ({ sidebarOpen, activePage, setActivePage }) => {
   return (
@@ -55,6 +57,28 @@ const Sidebar = ({ sidebarOpen, activePage, setActivePage }) => {
           >
             <img src={progressIcon} alt="प्रगती" className="w-6 h-6" />
             {sidebarOpen && <span className="ml-3 text-gray-700 font-medium">प्रगती</span>}
+          </li>
+
+          <li
+            onClick={() => setActivePage('kamgiri')}
+            className={`flex items-center cursor-pointer p-2 rounded hover:bg-purple-200 ${
+              activePage === 'kamgiri' ? 'bg-purple-300' : ''
+            }`}
+            title="संस्थेची कामगिरी"
+          >
+            <img src={achievementIcon} alt="संस्थेची कामगिरी" className="w-6 h-6" />
+            {sidebarOpen && <span className="ml-3 text-gray-700 font-medium">कामगिरी</span>}
+          </li>
+
+          <li
+            onClick={() => setActivePage('gallery')}
+            className={`flex items-center cursor-pointer p-2 rounded hover:bg-purple-200 ${
+              activePage === 'gallery' ? 'bg-purple-300' : ''
+            }`}
+            title="गॅलरी"
+          >
+            <img src={galleryIcon} alt="गॅलरी" className="w-6 h-6" />
+            {sidebarOpen && <span className="ml-3 text-gray-700 font-medium">गॅलरी</span>}
           </li>
         </ul>
       </nav>
